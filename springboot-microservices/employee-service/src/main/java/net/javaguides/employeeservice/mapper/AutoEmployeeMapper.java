@@ -12,6 +12,7 @@ public interface AutoEmployeeMapper {
     AutoEmployeeMapper MAPPER = Mappers.getMapper(AutoEmployeeMapper.class);
 
     @Mapping(source = "departmentCode", target = "departmentCode")
+    @Mapping(source = "organizationCode", target = "organizationCode")
     EmployeeDto mapToEmployeeDto(Employee employee);
 
     Employee mapToEmployee(EmployeeDto employeeDto);
